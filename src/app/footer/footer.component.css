@@ -1,0 +1,13 @@
+footer {
+    background-color: rgb(39, 39, 39);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: rgb(185, 185, 185);
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,63 @@
+<nav class="navbar ">
+    <form class="container-fluid">
+        <div class="input-group container icon">
+            <!-- Logo -->
+            <a class="me-5 icon logo">MY STORE</a>
+
+            <!-- Icon Search -->
+            <span class="input-group-text menghilang" id="basic-addon1">
+                <i class="fa-solid fa-magnifying-glass search"></i>
+            </span>
+            <!-- Input Search -->
+            <input type="text" [(ngModel)]="searchKeyword" [ngModelOptions]="{standalone: true}" type="text" 
+            class="form-control menghilang" placeholder="Search..." aria-describedby="basic-addon1" 
+            (input)="onSearch()">
+
+            <!-- Icon Cart -->
+            <a class="mx-5 icon menghilang"><i class="fa-solid fa-cart-shopping"></i></a>
+            
+            <!-- Container Modal-Popup Button -->
+            <button alt="" class="button-with-image rounded-circle" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            </button>
+        </div>
+    </form>
+</nav>
+
+<!-- Fungsi Container Modal-Popup Button -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <!-- Gambar User di dalam Fungsi List -->
+    <div class="offcanvas-header">
+        <button alt="" class="button-with-image rounded-circle button" type="button"></button>
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Saka Bayu L</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <!-- List Group -->
+    <div class="list-group">
+        <table>
+            <tbody>
+                <tr>
+                    <td><i class="fa-solid fa-user"></i></td>
+                    <td><a href="#" class="list-group-item list-group-item-action">View Profile</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-gear"></i></td>
+                    <td><a href="#" class="list-group-item list-group-item-action">Account Settings</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-heart"></i></td>
+                    <td><a href="#" class="list-group-item list-group-item-action">Favorite</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-cart-shopping"></i></td>
+                    <td><a href="#" class="list-group-item list-group-item-action">Wishlist</a></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-gear"></i></td>
+                    <td><a href="#" class="list-group-item list-group-item-action">Sign out</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
